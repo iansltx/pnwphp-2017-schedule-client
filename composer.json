@@ -1,0 +1,29 @@
+{
+  "name": "iansltx/pnwphp-2017-schedule-client",
+  "description": "A nicely-wrapped scraper for the PNWPHP 2017 conference schedule",
+  "keywords": ["PNWPHP", "conference"],
+  "homepage": "https://github.com/iansltx/pnwphp-2017-schedule-client",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Ian Littman",
+      "email": "iansltx@gmail.com",
+      "homepage": "https://twitter.com/iansltx",
+      "role": "Developer"
+    }
+  ],
+  "require": {
+    "php" : ">=7.1",
+    "fabpot/goutte": "^3.2"
+  },
+  "autoload": {
+    "psr-4": {
+      "iansltx\\PNWPHP2017ScheduleClient\\": "src"
+    }
+  },
+  "extra": {
+    "branch-alias": {
+      "dev-master": "1.0-dev"
+    }
+  }
+}
