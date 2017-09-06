@@ -5,7 +5,7 @@ namespace iansltx\PNWPHP2017ScheduleClient;
 /**
  * Immutable collection of events
  */
-class Schedule
+class Schedule implements \Countable
 {
     protected $events;
 
@@ -17,6 +17,11 @@ class Schedule
                 (strpos($event1->getTitle(), 'Room 111') !== false); // allow for stable sort based on Thursday room
         });
         $this->events = $events;
+    }
+
+    public function count()
+    {
+        return count($this->events);
     }
 
     public function filter(callable $filter) : Schedule
