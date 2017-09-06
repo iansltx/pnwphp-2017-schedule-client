@@ -39,7 +39,7 @@ class Event implements \JsonSerializable
 
     function jsonSerialize()
     {
-        return $this->title . ' on ' . $this->startsAt->format('l') . ' at ' . $this->startsAt->format('h:i A');
+        return $this->title . ' on ' . $this->startsAt->format('l') . ' at ' . $this->startsAt->format('g:i A');
     }
 
     public function __toString()
